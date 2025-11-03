@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Shopping mart — Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Shopping mart</div>
+    <div class="top-actions">
+      <a href="index.html" class="link">Home</a>
+      <a href="login.html" class="link">Account</a>
+      <a href="cart.html" class="link">Cart (<span id="miniCount2">0</span>)</a>
+    </div>
+  </header>
+
+  <!-- 🔍 Search Bar Section -->
+  <section class="search-bar" style="padding:12px; text-align:center;">
+    <input id="homeSearch" type="text" placeholder="Search products..." 
+           style="padding:8px; width:70%; border-radius:8px; border:1px solid #ccc;">
+    <button id="searchBtn" class="btn primary">Search</button>
+  </section>
+
+  <main class="container two-column">
+    <aside class="sidebar">
+      <h3>All Categories</h3>
+      <ul id="categoryList" class="cat-list"></ul>
+    </aside>
+
+    <section class="content">
+      <h2>Popular Stores & Trends</h2>
+      <div class="card small">
+        <p class="muted">Sale is live • Explore daily deals</p>
+      </div>
+
+      <h3 style="margin-top:16px">Recently Viewed</h3>
+      <div id="recent" class="grid small-grid"></div>
+    </section>
+  </main>
+
+ <script src="script.js"></script>
+</body>
+</html>

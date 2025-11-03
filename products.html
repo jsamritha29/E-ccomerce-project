@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Shopping  mart  — Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Shopping  mart </div>
+   
+  </header>
+
+  <main class="container">
+    <section>
+      <div class="controls">
+        <input id="listSearch" placeholder="Search within products"/>
+        <select id="sortSelect">
+          <option value="relevance">Relevance</option>
+          <option value="price-asc">Price Low → High</option>
+          <option value="price-desc">Price High → Low</option>
+          <option value="rating">Top Rated</option>
+        </select>
+      </div>
+
+      <h2 id="listTitle">Products</h2>
+      <div id="productList" class="grid"></div>
+    </section>
+  </main>
+
+  <footer class="bottom-nav">
+    <a href="index.html">Home</a>
+    <a href="categories.html">Categories</a>
+    <a href="login.html">Account</a>
+    <a href="cart.html"> My Cart</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
